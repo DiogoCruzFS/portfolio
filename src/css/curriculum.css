@@ -177,3 +177,21 @@
         width: 30%;
     }
 }
+
+@media (max-width: 750px) {
+    .contato_redesocial {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .link_menu {
+        font-size: 1.2rem;
+    }
+
+    .container_projetos {
+        padding: 30% 0% 0% 0%;
+    }
+}

@@ -157,6 +157,7 @@
     .conteudo_sobremim {
         align-items: center;
         padding: 4% 0% 0% 0%;
+        text-align: center;
     }
 
     .cabecalho {
@@ -171,5 +172,23 @@
 @media (max-width: 800px) {
     .menu {
         gap: 2rem;
+    }
+
+    .rodape {
+        margin: 30% 0% 0% 0%;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 1.9rem;
+    }
+
+    .titulo_sobremim {
+        font-size: 1.9rem;
+    }
+
+    .texto_sobremim {
+        font-size: 1.3rem;
     }
 }
