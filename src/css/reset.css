@@ -5,8 +5,10 @@
     padding: 0;
 }
 
+
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F2F4F3;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
+

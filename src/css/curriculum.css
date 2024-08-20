@@ -1,49 +1,54 @@
 .container_curriculo {
-    padding: 4.092% 15%;
+    padding: 6% 15%;
 }
 
 .conteudo_curriculo {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 3rem;
 }
 
 .titulo_curriculo {
-    color: #E01A4F;
-    font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    color: var(--cor-titulo);
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
 }
 
 .contato_redesocial {
     display: flex;
-    gap: 28px;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.imagem {
+    width: 20%;
 }
 
 .contato {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 1.1875rem;
 }
 
 .titulo_contato {
-    color: #E01A4F;
-    font-size: 26px;
-    font-family: "Krona One", sans-serif;
+    color: var(--cor-titulo);
+    font-size: 1.625rem;
+    font-family: var(--fonte-titulo);
     font-weight: 300;
 }
 
 .texto_contato {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
 }
 
 .link_redesocial {
     text-decoration: none;
-    color: #697268;
+    color: var(--cor-link);
 }
 
 .link_redesocial:hover {
-    color: #E01A4F;
+    color: var(--cor-titulo);
 }
 
 .conteudo_experiencias {
@@ -53,64 +58,122 @@
 .experiencias_cursos {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 .experiencias {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 1.1875rem;
 }
 .titulo_experiencias {
-    color: #E01A4F;
-    font-size: 26px;
-    font-family: "Krona One", sans-serif;
+    color: var(--cor-titulo);
+    font-size: 1.625rem;
+    font-family: var(--fonte-titulo);
     font-weight: 300;
 }
 
 .desordenado_experiencias {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
     padding: 0% 0% 0% 2%; 
 }
 
 .titulo_cursos {
-    color: #E01A4F;
-    font-size: 26px;
+    color: var(--cor-titulo);
+    font-size: 1.625rem;
     font-family: "Krona One", sans-serif;
     font-weight: 300;
 }
 
 .link_certificado {
     text-decoration: none;
-    color: #697268;
+    color: var(--cor-link);
 }
 
 .link_certificado:hover {
-    color: #E01A4F;
+    color: var(--cor-titulo);
 }
 
 .container_projetos {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 3% 15%;
-    gap: 46.9px;
+    padding: 6% 15%;
+    gap: 3rem;
+}
+
+.imagem-breve {
+    width: auto;
 }
 
 .titulo_projetos {
-    font-size: 36px;
-    font-family: "Krona One", sans-serif;
-    color: #E01A4F;
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
 }
 
 .em_breve {
     display: flex;
     flex-direction: row;
-    gap: 93px;
+    gap: 30%;
+    width: 100%;
+    justify-content: center;
 }
 
 .imagem:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
     border-radius: 16px;
+}
+
+@media (max-width: 1500px) {
+    .em_breve {
+        gap: 15%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container_curriculo {
+        padding: 8%;
+    }
+
+    .contato_redesocial {
+        justify-content: center;
+    }
+
+    .titulo_curriculo {
+        text-align: center;
+    }
+
+    .titulo_experiencias {
+        text-align: center;
+    }
+
+    .titulo_cursos {
+        text-align: center;
+    }
+
+    .desordenado_experiencias {
+        justify-content: center;
+    }
+
+    .imagem {
+        width: auto;
+    }
+
+    .titulo_projetos {
+        text-align: center;
+    }
+
+    .container_projetos {
+        padding: 8%;
+    }
+
+    .em_breve {
+        gap: 4%;
+    }
+
+    .imagem-breve {
+        width: 30%;
+    }
 }
