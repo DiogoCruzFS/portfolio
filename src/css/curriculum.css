@@ -42,72 +42,33 @@
     font-size: 1.5rem;
 }
 
-.link_redesocial {
+.link__destacado {
     text-decoration: none;
     color: var(--cor-link);
 }
 
-.link_redesocial:hover {
+.link__destacado:hover {
     color: var(--cor-titulo);
 }
 
-.conteudo_experiencias {
-    padding: 4.3% 0% 0% 0%;
-}
-
-.experiencias_cursos {
-    display: flex;
-    flex-direction: column;
-    gap: 3.125rem;
-}
-
-.experiencias {
-    display: flex;
-    flex-direction: column;
-    gap: 1.1875rem;
-}
-.titulo_experiencias {
-    color: var(--cor-titulo);
-    font-size: 1.625rem;
-    font-family: var(--fonte-titulo);
-    font-weight: 300;
-}
-
-.desordenado_experiencias {
+.lista__experiencias {
     font-size: 1.5rem;
     font-family: var(--fonte-texto);
     padding: 0% 0% 0% 2%; 
 }
 
-.titulo_cursos {
-    color: var(--cor-titulo);
-    font-size: 1.625rem;
-    font-family: "Krona One", sans-serif;
-    font-weight: 300;
-}
-
-.link_certificado {
-    text-decoration: none;
-    color: var(--cor-link);
-}
-
-.link_certificado:hover {
-    color: var(--cor-titulo);
-}
-
 .container_projetos {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: 6% 15%;
+}
+
+.conteudo_projeto {
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
 }
 
-.imagem-breve {
-    width: auto;
-}
-
 .titulo_projetos {
+    text-align: center;
     font-size: 2.25rem;
     font-family: var(--fonte-titulo);
     color: var(--cor-titulo);
@@ -119,17 +80,6 @@
     gap: 30%;
     width: 100%;
     justify-content: center;
-}
-
-.imagem-breve:hover {
-    background-color: var(--cor-hover);
-    border-radius: 16px;
-}
-
-@media (max-width: 1500px) {
-    .em_breve {
-        gap: 15%;
-    }
 }
 
 @media (max-width: 1300px) {
@@ -158,7 +108,7 @@
     }
 
     .imagem {
-        width: auto;
+        width: 30%;
     }
 
     .titulo_projetos {
@@ -183,9 +133,6 @@
         flex-direction: column;
         text-align: center;
     }
-}
-
-@media (max-width: 500px) {
 
     .link_menu {
         font-size: 1.2rem;
@@ -193,5 +140,9 @@
 
     .container_projetos {
         padding: 30% 0% 0% 0%;
+    }
+
+    .imagem {
+        width: 30%;
     }
 }
